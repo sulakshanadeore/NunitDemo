@@ -9,9 +9,15 @@ using System.Threading.Tasks;
 
 namespace CustomerUnderTest.Tests
 {
+
+
     [TestFixture]//it allows you to write  tests under it
     public class CustomerOrderServiceTests
     {
+        
+
+
+
         [TestCase]
         public void When_Premium_Customer_Expect_10PercentDiscount()
         {
@@ -23,7 +29,7 @@ namespace CustomerUnderTest.Tests
             cs.ApplyDiscount(c, o);
             //Assert
             
-            ClassicAssert.AreEqual(o.Amount, 140);
+            ClassicAssert.AreEqual(o.Amount, 135);
         
         }
     }

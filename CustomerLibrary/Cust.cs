@@ -30,8 +30,11 @@ namespace CustomerLibrary
 
     }
 
-    public class CustomerOrderService { 
-    public void ApplyDiscount(Cust customer,Order order) {
+    public class CustomerOrderService {
+
+
+        
+        public void ApplyDiscount(Cust customer,Order order) {
             if (customer.CustomerType==CustType.Premium)
             {
                 order.Amount = order.Amount - ((order.Amount * 10) / 100);
